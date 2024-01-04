@@ -1,0 +1,36 @@
+.footer {
+  background-color: black;
+  display: flex;
+  font-size: medium;
+  font-weight: bold;
+  height: auto;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+a {
+  color: whitesmoke;
+}
+
+a:hover {
+  background-color: #404040c0;
+}
+
+.text {
+  font-size: small;
+  padding: 0.5vw;
+  background-color: rgba(0, 0, 0, 0.183);
+  color: whitesmoke;
+  text-align: center;
+  align-items: flex-start;
+}
+
+.links {
+  align-items: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5vw;
+
+  font-size: small;
+}

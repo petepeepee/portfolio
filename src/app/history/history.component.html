@@ -1,0 +1,29 @@
+<div class="history">
+
+  <h2 class="resume">Resume</h2>
+  <div class="container">
+    <div class="work">
+      <h3>Work Experience</h3>
+      <!-- *ngFor looppi käy läpi historycomponentin workXP taulukon ja tulostaa sen jokaisen olion ominaisuudet p elementteihin-->
+      <li *ngFor="let item of workXP">
+        <p>{{item.time}} <br>{{item.place}} <br>{{item.assignment}}</p>
+      </li>
+    </div>
+    <div class="education">
+      <h3>Education</h3>
+      <!-- *ngfor käytetään samaan education taulukossa-->
+      <li *ngFor="let item of education">
+        <p>{{item.time}}<br>
+          {{item.degree}}<br>
+          {{item.school}}</p>
+      </li>
+    </div>
+    <div class="languages">
+      <h3>Languages</h3>
+      <!-- *ngfor käytetään samaan languageSkills taulukossa -->
+      <li *ngFor="let item of languageSkills">
+        <p>{{item.language}} - {{item.level}}</p>
+      </li>
+    </div>
+  </div>
+</div>

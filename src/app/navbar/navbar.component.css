@@ -1,0 +1,106 @@
+.navdiv {
+  padding: 0.1vw;
+  margin: 0.1vw;
+  background-color: black;
+}
+
+.navul {
+  padding: 0.3vw;
+  margin: 0.3vw;
+  list-style-type: none;
+  overflow: auto;
+  background-color: rgba(87, 86, 86, 0.322);
+}
+
+.navli {
+  float: left;
+  width: 15vw;
+  font-size: larger;
+}
+
+.navli a {
+  display: block;
+  text-shadow: 3px 3px 5px rgb(160, 174, 182);
+  text-align: center;
+  padding: 0.5vw;
+  color: whitesmoke;
+}
+
+.navli a:hover {
+  background-color: #404040c0;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .navdiv {
+    padding: 0;
+    margin: 0;
+    width: min-content;
+    background-color: transparent;
+  }
+
+  .navul.show {
+    display: none;
+  }
+
+  .navul {
+    display: none;
+  }
+
+  .navul.show {
+    margin: 1vw;
+    padding: 1vw;
+    display: block;
+    justify-content: space-around;
+    align-content: center;
+  }
+
+  .navli {
+    width: 80%;
+    font-size: large;
+    text-align: center;
+    margin: 1vw;
+    padding: 1vw;
+    background-color: black;
+  }
+
+  .navli a {
+    background-color: black;
+  }
+
+  .navli a:hover {
+    background-color: #333333c0;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 30px;
+    background-color: transparent;
+    padding: 3px;
+    margin: 3px;
+  }
+
+  .hamburger span {
+    width: 100%;
+    height: 4px;
+    background-color: whitesmoke;
+  }
+
+  .hamburger.closed span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .hamburger.closed span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.closed span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+}

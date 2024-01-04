@@ -1,0 +1,47 @@
+body {
+  background: linear-gradient(
+    -225deg,
+    rgba(24, 24, 24, 0.909) 50%,
+    rgba(60, 66, 71, 0.678) 80%
+  );
+  margin: 5px;
+  padding: 0px;
+  border: 1px solid black;
+}
+
+.hedi {
+  margin: 5px;
+  padding: 5px;
+}
+
+.navi {
+  margin: 5px;
+  padding: 5px;
+}
+
+.main {
+  margin: 5px;
+  padding: 5px;
+}
+
+.button {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.top {
+  width: 40vw;
+  margin: 1vw;
+  padding: 1vw;
+  background-color: black;
+  color: whitesmoke;
+  box-shadow: 3px 3px 5px rgb(160, 174, 182);
+  font-size: larger;
+  text-shadow: 3px 3px 5px rgb(160, 174, 182);
+}
+
+.top:hover {
+  background-color: #404040c0;
+}

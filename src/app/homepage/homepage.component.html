@@ -1,0 +1,24 @@
+<body>
+  <!-- html sivun runko ja rakenne määritellään tässä -->
+  <!-- tarvittavat komponentit tuodaan ja asetetaan paikalleen -->
+  <div class="hedi">
+    <!-- sivun otsikko/yläosa -->
+    <app-header>
+    </app-header>
+  </div>
+  <div class="navi">
+    <!-- sivun navigointi -->
+    <app-navbar></app-navbar>
+  </div>
+  <div class="main">
+    <!-- sivuston pääsisältö tuotuna routeroutletilla, joka näyttää käyttäjälle
+    sivuston sisällön reitityksen avulla, kun navigoidaan ja reitti vaihtuu näytetään tässä -->
+    <router-outlet></router-outlet>
+    <div class="button">
+      <!-- lisäksi määritellään button tapahtuma, jolla ohjataan käyttäjä takaisin sivun yläosaan -->
+      <button class="top" *ngIf="isHidden" (click)="scrollToTop()">Go to top</button>
+    </div>
+  </div>
+  <!-- footer -->
+  <app-footer></app-footer>
+</body>

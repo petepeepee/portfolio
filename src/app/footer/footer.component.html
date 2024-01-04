@@ -1,0 +1,11 @@
+<div class="footer">
+  <div class="text">
+    <p>© Petri Paasila 2023</p>
+  </div>
+  <div class="links">
+    <ul *ngFor="let item of links">
+      <a [href]="item.url">{{item.name}}</a>
+    </ul>
+  </div>
+
+</div>

@@ -1,0 +1,13 @@
+<div class="navdiv">
+  <!-- sisältää navigointivalikon -->
+  <!-- hampurilaispainike joka näyttää piilotetun hampurilaisvalikon kun painiketta painetaan se avaa valikon -->
+  <button class="hamburger" (click)="clickMenu()"><span></span><span></span><span></span>
+  </button>
+  <!-- auttaa hallitsemaan css luokkien dynaamista muuttumista käyttöliittymässä -->
+  <ul class="navul" [class.show]="showMenu">
+    <!-- ankkurielementti jota käytetään navigointilinkkinä, routerlink ominaisuus ohjaa sovellusta oikealle reitille -->
+    <li class="navli" *ngFor="let item of menuItems"><a [routerLink]="item.link" (click)="clickMenu(); resetMenu()">{{
+        item.label
+        }}</a></li>
+  </ul>
+</div>
