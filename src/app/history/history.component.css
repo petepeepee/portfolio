@@ -27,6 +27,11 @@
   li {
     list-style: none;
   }
+
+  p {
+    font-size: large;
+    padding: 0.5vw;
+  }
 }
 
 @media screen and (max-width: 800px) {

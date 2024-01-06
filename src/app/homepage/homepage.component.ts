@@ -21,7 +21,7 @@ export class HomepageComponent implements OnInit {
   @HostListener('window:scroll', [])
   onScroll(): void {
     // määritellään isHidden arvon muutos, kun sivun yläosasta liikutaan 10px alaspäin
-    this.isHidden = window.scrollY > 10;
+    this.isHidden = window.scrollY > 50;
   }
 
   // määritellään button tapahtuma, jolla ohjataan käyttäjä takaisin sivun yläosaan
