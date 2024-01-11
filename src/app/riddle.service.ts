@@ -59,8 +59,9 @@ export class RiddleService {
 
     // return of(randomRiddle);
 
-    // palauttaa APIUrlin vastauksen ja ottaa sen vastaan: käsittelee myöskin niin, että koostaa Riddle rajapinnan uudelleen
-    // ja antaa sille arvoksi arvoituksen sekä vastauksen jotka saadaan APIlta
+    // lähettää HTTP Get pyynnön apille, joka palauttaa responsen, joka muutetaan map operaattorilla
+    //objectiksi Riddle, jolla on ominaisuudet riddle ja correctAnswer, jotka saavat apilta arvonsa
+    // palauttaa lopuksi muokatun Riddlen
     return this.http.get<Riddle>(this.apiUrl).pipe(
       map((response: any) => {
         // Käsittele API-vastaus ja päivitä correctAnswer answeriksi
