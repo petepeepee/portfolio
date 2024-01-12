@@ -72,6 +72,7 @@ export class SecretsComponent implements OnInit {
   // määritellään funktion reset, jossa määritellää propertyn isSolved arvoa falseksi ja kutsutaan this.riddleService.resetIsSolved()-metodia
   // jotta saadaan muutettua riddle.servicessä olevaa isSolved arvoa
   reset(): void {
+    this.answer = '';
     this.isSolved = !this.isSolved;
     this.riddleService.resetIsSolved();
   }

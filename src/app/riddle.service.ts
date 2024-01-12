@@ -41,15 +41,18 @@ export class RiddleService {
 
   // ];
 
+  // alustetaan isSolved muuttuja boolean tyypiksi joka saa arvon false
+  private isSolved: boolean;
+  // alustetaan isSolvedKey muuttuja string tyyppiseksi, vain luettavaksi ja joka saa arvon 'Solved'
+  private readonly isSolvedKey: string;
+
   // konstruktori saa parametrikseen httpn joka on tyyppiä HttpClient ja määrittelee sen yksityiseksi
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+    this.isSolved = false;
+    this.isSolvedKey = 'Solved';
+  }
 
   private readonly apiUrl = 'https://riddles-api.vercel.app/random';
-
-  // alustetaan isSolved muuttuja boolean tyypiksi joka saa arvon false
-  private isSolved: boolean = false;
-  // alustetaan isSolvedKey muuttuja string tyyppiseksi, vain luettavaksi ja joka saa arvon 'Solved'
-  private readonly isSolvedKey: string = 'Solved';
 
   // funktio getRandomRiddle$, joka palauttaa satunnaisen riddlen Observablena käyttäen of funktiota
   getRandomRiddle$(): Observable<Riddle> {
