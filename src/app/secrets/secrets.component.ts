@@ -54,11 +54,13 @@ export class SecretsComponent implements OnInit {
       this.correctAnswer &&
       this.answer.toLowerCase() === this.correctAnswer?.toLowerCase()
     ) {
+      console.log(this.answer + ' is correct!');
       // Jos vastaus on oikein vaihdetaan isSolved-tilan arvoa
       this.isSolved = !this.isSolved;
       this.riddleService.setIsSolved(true);
     } else {
       // Jos vastaus on väärä, ohjataan ilmoitus joka näytetään 3 sekunnin ajaksi ja tyhjennetään vastauslaatikko
+      console.log(this.answer + ' is wrong!');
       this.answer = '';
       this.showErrorMessage = true;
       setTimeout(() => {
