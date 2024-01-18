@@ -35,7 +35,9 @@ export class SecretsComponent implements OnInit {
 
   // kutsutaan lifecyclemetodia ngOnInit, jossa määritellään
   ngOnInit(): void {
-    // Palvelun resetIsSolved-metodi kutsutaan, joka asettaa isSolved-tilan arvon falseksi.
+    // asettaa localstorageen muuttujan arvon
+    this.riddleService.setIsSolved(this.isSolved);
+
     // varmistaa, että kun SecretsComponent-komponentti alustetaan, arvoitus ei ole ratkaistu.
     this.riddleService.getIsSolved();
     // Palvelun getRandomRiddle$-metodi kutsutaan, joka palauttaa Observablen,
