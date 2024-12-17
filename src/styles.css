@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  padding: 1vw;
+  margin: 1vw;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.285);
+  color: whitesmoke;
+  font-size: large;
+  max-width: 60vw;
+}
+
+.text {
+  padding: 1vw;
+  margin: 1vw;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  color: aqua;
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  color: pink;
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+}

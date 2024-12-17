@@ -1,5 +1,17 @@
 import { Injectable } from '@angular/core';
+//yksinkertainen in memory tietokanta, josta haetaan tietoa muille komponenteille
 
+//in memory web apilla olisin voinut tehdä tämän siten, että installoinut apin, luonut esimerkiksi
+//inMemoryDataServicen, importoinut inmemorydbservicen service komponenttiin
+//ja asettanut sen implementoimaan sitä, luonut databasen jossa esimerkiksi työhistoria
+//rekisteröinty inmemorywebapi app.modulessa
+//importoinut httpclient komponenttiin ja asettanut constructorin parametriksi
+//luokan määrityksissä määrittänyt esimerkiksi apiUrlin ja workXPin
+// ngOnInitissä hakenut workXP luokan muuttujaan http.getillä apiurlista datan
+//ja alustanut sen workXP muuttujan arvoksi
+//en tehnyt sitä, koska unohdin sen ja muistin vasta tänä aamuna
+
+// injectoidaan tietokanta komponenteille
 @Injectable({
   providedIn: 'root',
 })

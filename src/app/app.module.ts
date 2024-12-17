@@ -17,6 +17,7 @@ import { TrainingComponent } from './training/training.component';
 import { HistoryComponent } from './history/history.component';
 import { SecretsComponent } from './secrets/secrets.component';
 import { InfoService } from './info.service';
+import { TicorporateComponent } from './ticorporate/ticorporate.component';
 
 @NgModule({
   // määritellään kaikki sovelluksen komponentit, joita käytetään tässä moduulissa
@@ -32,6 +33,7 @@ import { InfoService } from './info.service';
     TrainingComponent,
     HistoryComponent,
     SecretsComponent,
+    TicorporateComponent,
   ],
   // määritellään kaikki Angular-moduulit, joita käytetään tässä päämoduulissa
   // BrowserModule: Tarvitaan sovelluksen suorittamiseen selaimessa.

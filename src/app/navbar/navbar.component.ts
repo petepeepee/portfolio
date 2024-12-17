@@ -38,5 +38,6 @@ export class NavbarComponent {
     { link: 'hobbies', label: 'Hobbies' },
     { link: 'history', label: 'Resume' },
     { link: 'secrets', label: 'Secrets' },
+    { link: 'ticorporate', label: 'Ticorporate' },
   ];
 }

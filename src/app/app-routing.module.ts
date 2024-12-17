@@ -8,6 +8,7 @@ import { CodingComponent } from './coding/coding.component';
 import { TrainingComponent } from './training/training.component';
 import { HistoryComponent } from './history/history.component';
 import { SecretsComponent } from './secrets/secrets.component';
+import { TicorporateComponent } from './ticorporate/ticorporate.component';
 
 export const routes: Routes = [
   { path: 'secrets', component: SecretsComponent },
@@ -30,6 +31,10 @@ export const routes: Routes = [
   {
     path: 'history',
     component: HistoryComponent,
+  },
+  {
+    path: 'ticorporate',
+    component: TicorporateComponent,
   },
   {
     path: '',
