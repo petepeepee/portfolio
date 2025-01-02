@@ -1,33 +1,36 @@
-<div class="code">
-  <h2>Coding</h2>
-  <div class="text">
-    <p>This is the newest addition to my life and I couldn't be happier that I applied to study this field in Jamk. As
-      said
-      before I am fairly new at this game but I am eager to learn and improve my skills. My interests are in the fields
-      of
-      full-stack developer and data and ai.</p>
-    <br>
-    <p>This is my second year at Jamk and
-      I have learned Javascript/Typescript as coding languages but I believe that I am going to expand the programming
-      languages. This portfolio has been done by using Angular as the framework and this is actually my final project
-      for
-      course teaching Angular (two birds with one stone: project for school and project for applying jobs). I also have
-      experience in using Svelte and I have plans to learn NextJS and Tailwind CSS in the future. Some of the skills I
-      have
-      learned during this fall was the fundamentals and work with databases with MySQL and MongoDB.</p>
-    <br>
-    <p>The reason I wanted to make this portfolio and show some of my skills I've learned is that I like learning new
-      things
-      in this field and make myself better at coding and using different kinds of tools and I believe that work
-      environment
-      would be great place to challenge myself and become better. My plans for the future is to develop my skills and
-      understanding. Here is a list of some the skills I have learned:</p>
-    <br>
-    <!-- *ngFor="let item of codingSkills" iteroi codingSkills listan ja tulostaa sen jokaisen alkion p elementtiin iteminä -->
-    <li *ngFor="let item of codingSkills">
+<div class="container">
+  <div class="content">
+    <div class="text">
+      <h2>Coding</h2>
+      <p>This is the newest addition to my life and I couldn't be happier that I applied to study this field in Jamk. As
+        said
+        before I am fairly new at this game but I am eager to learn and improve my skills. My interests are in the
+        fields
+        of
+        full-stack developer and data and ai.</p>
       <br>
-      <p>{{item.skill}}</p>
-    </li>
-
+      <p>This is my second year at Jamk and
+        I have learned Javascript/Typescript as coding languages but I believe that I am going to expand the programming
+        languages. This portfolio has been done by using Angular as the framework and this is actually my final project
+        for
+        course teaching Angular (two birds with one stone: project for school and project for applying jobs). I also
+        have
+        experience in using Svelte and I have plans to learn NextJS and Tailwind CSS in the future. Some of the skills I
+        have
+        learned during this fall was the fundamentals and work with databases with MySQL and MongoDB.</p>
+      <br>
+      <p>The reason I wanted to make this portfolio and show some of my skills I've learned is that I like learning new
+        things
+        in this field and make myself better at coding and using different kinds of tools and I believe that work
+        environment
+        would be great place to challenge myself and become better. My plans for the future is to develop my skills and
+        understanding. Here is a list of some the skills I have learned:</p>
+      <br>
+      <!-- *ngFor="let item of codingSkills" iteroi codingSkills listan ja tulostaa sen jokaisen alkion p elementtiin iteminä -->
+      <li *ngFor="let item of codingSkills">
+        <br>
+        <p>{{item.skill}}</p>
+      </li>
+    </div>
   </div>
 </div>

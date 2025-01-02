@@ -1,22 +1,28 @@
-<div class="sports">
-  <h2>Something about sports</h2>
-  <div class="text">
-    <p>Physical activities are my main form for me to use my free time. As said before I have learned to like coding and
-      try
-      to increase my knowledge on my own time as well but playing ball games or going to gym or other forms of physical
-      activities keep my mind fresh and many times after some sort of physical activity it feels easier to learn new
-      things
-      and skills. Even though this portfolio is aimed mainly towards jobs in the field of information technology, I am
-      interested in hearing good job opportunities in the field of sports as well. In my past I have worked as personal
-      trainer and as lead baseball instructor for the children in one of the clubs I played in. I have wide
-      understanding
-      about different kinds of training methods and sports. Below you can find some of the forms of physical activity I
-      have trained myself/people in:
-    </p>
-    <br>
-    <li *ngFor="let item of trainingKnowledge">
+<div class="container">
+  <div class="content">
+    <div class="text">
+      <h2>Something about sports</h2>
+      <p>Physical activities are my main form for me to use my free time. As said before I have learned to like coding
+        and
+        try
+        to increase my knowledge on my own time as well but playing ball games or going to gym or other forms of
+        physical
+        activities keep my mind fresh and many times after some sort of physical activity it feels easier to learn new
+        things
+        and skills. Even though this portfolio is aimed mainly towards jobs in the field of information technology, I am
+        interested in hearing good job opportunities in the field of sports as well. In my past I have worked as
+        personal
+        trainer and as lead baseball instructor for the children in one of the clubs I played in. I have wide
+        understanding
+        about different kinds of training methods and sports. Below you can find some of the forms of physical activity
+        I
+        have trained myself/people in:
+      </p>
       <br>
-      <p>{{item.method}}</p>
-    </li>
+      <li *ngFor="let item of trainingKnowledge">
+        <br>
+        <p>{{item.method}}</p>
+      </li>
+    </div>
   </div>
 </div>

@@ -3,6 +3,7 @@
 .container {
   display: flex;
   justify-content: center;
+  width: viewport-width;
 }
 
 .content {
@@ -12,13 +13,14 @@
   background-color: rgba(0, 0, 0, 0.674);
   color: whitesmoke;
   font-size: large;
-  max-width: 60vw;
+  max-width: 70vw;
 }
 
 .text {
   padding: 1vw;
   margin: 1vw;
   font-family: Arial, Helvetica, sans-serif;
+  max-width: 70vw;
 }
 
 h1 {
@@ -49,6 +51,7 @@ li {
 }
 
 img {
+  width: 80%;
   display: flex;
   justify-self: center;
 }

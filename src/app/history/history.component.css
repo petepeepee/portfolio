@@ -12,7 +12,7 @@
     display: inline;
   }
 
-  .container {
+  /* .container {
     padding: 1vw;
     margin: 1vw;
     display: flex;
@@ -22,7 +22,7 @@
     text-align: flex-start;
     font-size: large;
     justify-content: center;
-  }
+  } */
 
   li {
     list-style: none;
@@ -35,7 +35,7 @@
 }
 
 @media screen and (max-width: 800px) {
-  .container {
+  /* .container {
     padding: 1vw;
     margin: 1vw;
     display: flex;
@@ -45,7 +45,7 @@
     text-align: flex-start;
     font-size: medium;
     justify-content: center;
-  }
+  } */
 
   h2 {
     color: whitesmoke;
