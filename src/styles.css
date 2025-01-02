@@ -55,3 +55,7 @@ img {
   display: flex;
   justify-self: center;
 }
+
+a {
+  color: wheat;
+}
