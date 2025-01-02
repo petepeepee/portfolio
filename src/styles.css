@@ -51,9 +51,10 @@ li {
 }
 
 img {
-  width: 80%;
   display: flex;
   justify-self: center;
+  min-width: 40%;
+  max-width: 70%;
 }
 
 a {
