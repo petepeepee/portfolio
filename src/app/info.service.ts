@@ -97,6 +97,12 @@ export class InfoService {
     { skill: 'MySQL' },
     { skill: 'MongoDB' },
     { skill: 'Svelte' },
+    { skill: 'NextJS' },
+    { skill: 'Tailwind CSS' },
+    { skill: 'Git' },
+    { skill: 'Redux' },
+    { skill: 'Redux Persist' },
+    { skill: 'Node.js' },
   ];
 
   private randomFacts: string[] = [
