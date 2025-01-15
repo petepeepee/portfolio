@@ -24,18 +24,19 @@
 }
 
 h1 {
+  color: rgba(250, 235, 215, 0.635);
   display: flex;
   justify-content: center;
 }
 
 h2 {
-  color: aqua;
+  color: rgba(250, 235, 215, 0.635);
   display: flex;
   justify-content: center;
 }
 
 h3 {
-  color: pink;
+  color: rgba(250, 235, 215, 0.635);
   display: flex;
   justify-content: center;
 }
@@ -59,4 +60,9 @@ img {
 
 a {
   color: wheat;
+}
+
+.images p {
+  font-size: small;
+  padding-bottom: 1vw;
 }
