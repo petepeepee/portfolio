@@ -30,7 +30,17 @@
         tilanhallintaan käytin Redux toolkit sekä Redux-Persist -kirjastoja.</p>
 
 
+      <h2>Käyttämäni teknologiat ja työkalut</h2>
 
+      <ul>
+        <li>VsCode</li>
+        <li>Next.js</li>
+        <li>React</li>
+        <li>Redux</li>
+        <li>Redux-Persist</li>
+        <li>Github</li>
+        <li>Git</li>
+      </ul>
 
 
       <h2>Projektin alku</h2>
@@ -90,7 +100,7 @@
         localstorageen, kun taas lopussa muutos sessionstorageen), tilan välittäminen/muuttaminen eri komponenteissa
         funktioilla. Tilanhallinnan lisäksi pääsin kehittämään ja suunnittelemaan yleisesti toiminnallisuuksia kuten eri
         modaalien luomiseen,
-        näkymien vaihtoon sekä saavutettavuuden kehittämiseen. Autoin myös backend-hakujen kanssa, ja yleisesti
+        navigointiin sovelluksessa sekä saavutettavuuden kehittämiseen. Autoin myös backend-hakujen kanssa, ja yleisesti
         ongelmien tullessa eteen.
 
         <br>
@@ -190,6 +200,26 @@
         <p>Sovellus wrapataan Provider-komponentilla käyttämään luotua storea sovelluksen pääkomponentissa.
           PersistGate-komponentti viivästyttää sovelluksen renderöintiä kunnes tallennettu tila on ladattu.</p>
 
+
+        <h3>Esimerkki tilan osan käytöstä muuttujassa</h3>
+        <img src="../assets/img/tilanjaarvonesimerkki.png" alt="useSelectoresimerk">
+        <p>Esimerkki Next.js useSelector hookin käytöstä, palauttamaan haluttu osa tilasta muuttujaan.</p>
+
+
+        <h3>Tietokantahaku Reducerissa</h3>
+        <img src="../assets/img/datareducer1.png" alt="esim1">
+        <p>Datareducer alkutilan määrittely, sekä hakufunktio tietokantaan.</p>
+
+        <h3>Esimerkki Reducer-funktiosta</h3>
+        <img src="../assets/img/datareducer2.png" alt="esim2">
+        <p>Datareducerin toiminnallisuus: kopion teko createSlicellä, nimen ja alkuperäisen tilan määrittely sekä
+          Reducer funktioiden määrittely.</p>
+
+        <h3>Tietokantahaun eri tilojen määrittely ja actionien luonti reducerissa</h3>
+        <img src="../assets/img/dataReducer3.png" alt="esim3">
+        <p>Tilan muutokset asyncThunck -funktion elämänkaaren mukaan ja reducerin jakaminen storeen, sekä actionien
+          määrittely.</p>
+
         <h3>Redux-devtools näkymä storesta</h3>
 
         <img src="../assets/img/redux-devtools.png" alt="Redux-devtools">
@@ -202,17 +232,7 @@
       </div>
 
 
-      <h2>Käyttämäni teknologiat ja työkalut</h2>
 
-      <ul>
-        <li>VsCode</li>
-        <li>Next.js</li>
-        <li>React</li>
-        <li>Redux</li>
-        <li>Redux Persist</li>
-        <li>Github</li>
-        <li>Git</li>
-      </ul>
 
       <h2>Yhteenveto ja suurimmat ongelmat</h2>
 
@@ -248,19 +268,10 @@
 
 
       <div class="images">
-        <h3>Tietokantahaku Reducerissa</h3>
-        <img src="../assets/img/datareducer1.png" alt="esim1">
-        <p>Datareducer alkutilan määrittely, sekä hakufunktio tietokantaan.</p>
 
-        <h3>Esimerkki Reducer-funktiosta</h3>
-        <img src="../assets/img/datareducer2.png" alt="esim2">
-        <p>Datareducerin toiminnallisuus: kopion teko createSlicellä, nimen ja alkuperäisen tilan määrittely sekä
-          Reducer funktioiden määrittely.</p>
-
-        <h3>Tietokantahaun eri tilojen määrittely ja actionien luonti reducerissa</h3>
-        <img src="../assets/img/dataReducer3.png" alt="esim3">
-        <p>Tilan muutokset asyncThunck -funktion elämänkaaren mukaan ja reducerin jakaminen storeen, sekä actionien
-          määrittely.</p>
+        <h3>Stackbuilder</h3>
+        <img src="../assets/img/stackbuildernappulat.png" alt="">
+        <p>Library-osion checkbox sekä navigointi.</p>
 
         <h3>Stackbuilder navigointi-button</h3>
         <img src="../assets/img/navigointifunktio.png" alt="">
@@ -268,10 +279,8 @@
         <p>Koodiesimerkki navigoinnista sovelluksessa sekä disablointiratkaisusta modaalien ollessa auki.</p>
 
 
-
-        <h3>Esimerkki tilan osan käytöstä muuttujassa</h3>
-        <img src="../assets/img/tilanjaarvonesimerkki.png" alt="useSelectoresimerk">
-        <p>Esimerkki Next.js useSelector hookin käytöstä, palauttamaan haluttu osa tilasta muuttujaan.</p>
+        <h3>Tutorial</h3>
+        <img src="../assets/img/tutorial.png" alt="">
 
         <h3>Esimerkki reittien kuuntelijasta</h3>
         <img src="../assets/img/tutorialmodal.png" alt="listener">
