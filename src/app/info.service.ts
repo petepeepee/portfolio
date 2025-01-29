@@ -78,7 +78,7 @@ export class InfoService {
   private languageSkills: { language: string; level: string }[] = [
     { language: 'Finnish', level: 'Native language' },
     { language: 'English', level: 'Excellent' },
-    { language: 'Svedish', level: 'Satisfactory' },
+    { language: 'Swedish', level: 'Satisfactory' },
   ];
 
   private trainingKnowledge: { method: string }[] = [
